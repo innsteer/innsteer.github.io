@@ -396,6 +396,13 @@ table.full .grp { border-left: 1px solid var(--line); }
 /* Links inside running text need a non-colour cue (WCAG 1.4.1): keep a visible underline. */
 .section p a, .section li a, figcaption a { border-bottom: 1px solid rgba(67, 56, 168, .45); }
 .section p a:hover, .section li a:hover, figcaption a:hover { border-bottom-color: var(--accent); }
+
+
+/* footer */
+.site-footer { border-top: 1px solid var(--line); background: var(--bg-tint); padding: 28px 0 32px; font-size: 14px; line-height: 1.55; color: var(--dim); text-align: center; }
+.site-footer p { margin: 0; }
+.site-footer p + p { margin-top: 4px; }
+@media (min-width: 1100px) { .site-footer { margin-left: var(--sidenav-w); } }
 </style>
 </head>
 <body>
@@ -724,6 +731,13 @@ table.full .grp { border-left: 1px solid var(--line); }
 </section>
 
 </main>
+
+<footer class="site-footer">
+  <div class="container narrow">
+    <p>&copy; 2026 Tuc Nguyen and Thai Le. All rights reserved.</p>
+    <p>Website UI design created with the help of ChatGPT.</p>
+  </div>
+</footer>
 
 <script>
 /* Table 1 of the camera-ready paper (neurips_2026.tex), extracted programmatically.
